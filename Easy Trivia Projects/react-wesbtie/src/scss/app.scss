@@ -1,0 +1,14 @@
+@import './global.scss';
+
+$color-theme: #1d1a4f;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  background-color: rgb(245, 238, 238);
+}

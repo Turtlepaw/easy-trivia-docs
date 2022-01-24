@@ -1,0 +1,28 @@
+#nav-desktop {
+  width: 40%;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+
+    li {
+      width: max-content;
+      white-space: nowrap;
+
+      button {
+        font-size: 1em;
+        padding: 0.5em 1em;
+        background-color: inherit;
+        color: #fff;
+        border: none;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

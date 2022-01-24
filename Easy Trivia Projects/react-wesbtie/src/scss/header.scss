@@ -1,0 +1,39 @@
+@use 'sass:map';
+@import '../scss/global.scss';
+@import '../scss/app.scss';
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: min-content;
+  padding: 0.5em 1em;
+  background-color: $color-theme;
+  z-index: 1;
+
+  h1 {
+    color: #fff;
+  }
+
+  #nav-mobile-toggle {
+    display: none;
+  }
+
+  @media screen 
+  and (max-width: calc(map.get($grid-breakpoints, "sm") + 50px)) {
+    & {
+      padding: 0.75em 1.5em;
+      justify-content: space-between;
+    }
+
+    #nav-desktop {
+      display: none;
+    }
+
+    #nav-mobile-toggle {
+      display: block;
+    }
+  }
+}

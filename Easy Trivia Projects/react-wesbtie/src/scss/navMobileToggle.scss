@@ -1,0 +1,11 @@
+button {
+  color: #fff;
+  background-color: inherit;
+  line-height: 0;
+  border: none;
+  padding: 0.5em 0.75em;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
